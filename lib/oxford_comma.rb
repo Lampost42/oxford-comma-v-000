@@ -6,8 +6,9 @@ def oxford_comma(array)
   else
     i = 0
     while i < array.length - 1
-      array[i] = array[i] + ","
+      array[i] = array[i] + ", "
     end
-    array[-1] = "and" + array[-1]
-    
+    array[-1] = "and " + array[-1]
+  end
+  return array.join
 end
